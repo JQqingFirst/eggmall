@@ -13,4 +13,6 @@ body{margin: 0 auto;min-width: 320px;max-width: 540px;background: #fff;font-size
 .fr{float: right;}
 img{max-width: 100%;}
 video{margin-left: -1px;width: 100%;}
-iframe.carousel{width: 100%;border:none;height: 220px;}
+iframe.carousel{width: 100%;border:none;}
+.grid{background-color: #f8f8f8;}
+.clear10{height: 10px;clear: both;}
