@@ -3,6 +3,7 @@
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		box-sizing: border-box;
 		outline: 0;
+		font-family: "Microsoft YaHei", PingFangSC-Regular, Helvetica, Droid Sans, Arial, sans-serif;
 	}
 
 	blockquote,
@@ -61,7 +62,8 @@
 	input,
 	select {
 		font-size: 100%;
-		font-family: inherit
+		font-family: inherit,
+		color:#000;
 	}
 
 	table {
@@ -83,7 +85,6 @@
 		font-size: 14px;
 		font-family: -apple-system, Helvetica, sans-serif;
 		line-height: 1.5;
-		color: #666;
 		-webkit-text-size-adjust: 100%!important;
 	}
 
@@ -97,6 +98,8 @@
 		clear: both;
 		zoom: 1;
 	}
-
+.fl{float: left;}
+.fr{float: right;}
 img{max-width: 100%;}
 .index-header{}
+iframe.carousel{width: 100%;border:none;height: 220px;}

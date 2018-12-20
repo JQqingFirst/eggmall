@@ -16,7 +16,7 @@
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<div class="page2">
+		<div class="page2 clearfix">
 			<div class="title">
 				<img src="./images/2/top.png">
 				<span>
@@ -24,7 +24,7 @@
 				</span>
 			</div>
 			<div class="content-list">
-				<div class="content info">
+				<div class="container info">
 					<h2><img src="./images/2/little-icon.png">金牌五星蛋简介</h2>
 					<ul>
 						<li>蛋清透亮、浓稠如蜜，蛋黄大而饱满</li>
@@ -37,7 +37,7 @@
 						<li><img src="./images/2/info3.png"></li>
 					</ol>
 				</div>
-				<div class="content rule">
+				<div class="container rule">
 					<h3>领取规则 <img src="./images/common/more.png"></h3>
 					<ul>
 						<li>
@@ -76,11 +76,11 @@
 						</li>
 					</ul>
 				</div>
-				<div class="content flow">
+				<div class="container flow">
 					<h3>领取流程 <img src="./images/common/more.png"></h3>
 					<img src="./images/2/flow.png">
 				</div>
-				<div class="bottom clearfix">
+				<div class="container bottom clearfix">
 					<div class="left">
 						<h2>免费吃蛋，送完为止</h2>
 						<div class="btn">赶快告诉你身边的小伙伴们吧！</div>
@@ -95,43 +95,35 @@
 </html>
 <style type="text/css">
 .page2{background-color: #705ce6;position: relative;}
-.title{position: relative;}
-.title>img{width: 100%;height: auto;}
-.title span{ position: absolute;bottom: -30px;left: 0;display: block;width: 100%;text-align: center;z-index: 3;}
-.title span img{width: 90%;}
-.content-list{margin-top: -20px;position:relative;z-index: 2;width: 100%;}
-.content{margin: 0 auto;padding-bottom: 20px;}
-.content h3{font-weight: bolder;font-size: 16px;width: 90%;margin: 0 auto;}
-.content h3 img{float: right;margin-top: 8px;width: 32px;margin-right: 10px;}
-.content{background-color: #fff; border-radius:20px;margin-bottom: 20px;}
-.info{padding-top:50px;}
-.info h2{text-align: center;width: 80%;margin: 0 auto;}
-.info h2 img{float: left;height:18px;margin-top: 9px;}
-.info ul{width: 84%;margin: 0 11%;padding-top: 10px;font-size: 13px;}
-.info ul li{line-height: 30px;position: relative;padding-left: 20px;}
-.info ul li:before{content: '';display: inline-block;border:solid 2px #1fccc6;border-radius: 10px;width: 8px;height: 8px;margin-right: 8px;position: absolute;left: 0;top: 9px;}
-.info ol{}
-.info ol li{width: 90%;margin: 0 auto;margin-bottom: 10px;}
-.info ol li img{width: 100%;border-radius: 4px;}
-.rule{}
-.rule h3{padding-top: 20px;}
-.rule ul{width: 90%;margin: 0 auto}
-.rule ul li{line-height: 32px;}
-.rule ul li h4{font-size: 14px;position: relative;padding-left: 24px;}
-.rule ul li h4 span{display: inline-block;width: 20px;height: 20px;border-radius: 10px;text-align: center;line-height: 20px;color: #fff;background-color: #f0b248;position: absolute;left: 0;top: 6px;}
-.rule ul li h5{ position: relative;padding-left: 40px;}
-.rule ul li h5:before{position: absolute;content: '';display: inline-block;border:solid 2px #1fccc6;border-radius: 10px;width: 8px;height: 8px;top: 10px;left: 24px;background-color: #1fccc6;}
-.rule ul li p{ position: relative; padding-left: 40px;line-height: 24px;}
-.rule ul li p:before{position: absolute;content: '';display: inline-block;border:solid 2px #1fccc6;border-radius: 10px;width: 8px;height: 8px;top: 7px;left: 24px;}
-.flow{}
-.flow h3{padding-top: 20px;}
-.flow>img{display:block;width: 80%;margin: 20px auto 10px;}
-.bottom{}
-.bottom{padding-bottom: 20px;width: 90%;margin: 0 auto;}
-.bottom .left{float:left;}
-.bottom .left h2{color: #fff;font-size: 18px;margin: 4px 0;}
-.bottom .left .btn{color: #fff;font-size: 14px;background-color: #f0b248;padding:5px 10px;border-radius: 20px;margin-left: -10px;}
-.bottom .left p{color: #fff;font-size: 16px;margin-top: 4px;}
-.bottom .right{float: right;width: 40%;}
-.bottom .right img{width: 100%;}
+.page2 .title{position: relative;}
+.page2 .title>img{width: 100%;height: auto;}
+.page2 .title span{position: absolute;bottom: -30px;left: 0;display: block;width: 100%;text-align: center;z-index: 3;}
+.page2 .title span img{width: 90%;}
+.page2 .content-list{margin-top: -20px;position:relative;z-index: 2;width: 100%;}
+.page2 .container{margin: 0 auto 20px;padding-bottom: 20px;border-radius: 20px;background-color: #fff;}
+.page2 .container h3{font-weight: bolder;font-size: 16px;}
+.page2 .container h3 img{float: right;margin-top: 8px;width: 32px;margin-right: 10px;}
+.page2 .info{padding-top: 50px;}
+.page2 .info h2{text-align: center;}
+.page2 .info h2 img{float: left;height: 18px;margin-top: 9px;}
+.page2 .info ul{padding-top: 10px;font-size: 13px;}
+.page2 .info ul li{line-height: 30px;position: relative;padding-left: 20px;}
+.page2 .info ul li:before{content: '';display: inline-block;border: solid 2px #1fccc6;border-radius: 10px;width: 12px;height: 12px;margin-right: 8px;position: absolute;left: 0;top: 9px;}
+.page2 .info ol li{margin-bottom: 10px;}
+.page2 .info ol li img{width: 100%;border-radius: 4px;}
+.page2 .rule ul li{line-height: 32px;}
+.page2 .rule ul li h4{font-size: 14px;position: relative;padding-left: 24px;line-height: 32px;font-weight: bold;}
+.page2 .rule ul li h4 span{display: inline-block;width: 20px;height: 20px;border-radius: 10px;text-align: center;line-height: 20px;color: #fff;background-color: #f0b248;position: absolute;left: 0;top: 6px;}
+.page2 .rule ul li h5{position: relative;padding-left: 40px;font-weight: bold;line-height: 32px;}
+.page2 .rule ul li h5:before{position: absolute;content: '';display: inline-block;border: solid 2px #1fccc6;border-radius: 10px;width: 12px;height: 12px;top: 10px;left: 24px;background-color: #1fccc6;}
+.page2 .rule ul li p{position: relative;padding-left: 40px;line-height: 24px;}
+.page2 .rule ul li p:before{position: absolute;content: '';display: inline-block;border: solid 2px #1fccc6;border-radius: 10px;width: 12px;height: 12px;top: 7px;left: 24px;}
+.page2 .flow > img{display: block;margin-top: 20px;margin-bottom: 10px;}
+.page2 .bottom{padding:0 20px;background-color: #705ce6;}
+.page2 .bottom .left{float: left;}
+.page2 .bottom .left h2{color: #fff;font-size: 18px;margin: 4px 0;}
+.page2 .bottom .left .btn{color: #fff;font-size: 14px;background-color: #f0b248;padding: 5px 10px;border-radius: 20px;margin-left: -10px;}
+.page2 .bottom .left p{color: #fff;font-size: 16px;margin-top: 4px;}
+.page2 .bottom .right{float: right;width: 40%;}
+.page2 .bottom .right img{width: 100%;}
 </style>
