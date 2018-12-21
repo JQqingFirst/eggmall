@@ -6,7 +6,7 @@ ol,ul{list-style: none}
 button,h1,h4,h4,h4,h5,h6,input,select{font-size: 100%;font-family: inherit,color:#000;}
 table{border-collapse: collapse;border-spacing: 0}
 a,a:visited{text-decoration: none;color: #333}
-body{margin: 0 auto;min-width: 320px;max-width: 540px;background: #fff;font-size: 14px;font-family: -apple-system, Helvetica, sans-serif;line-height: 1.5;-webkit-text-size-adjust: 100%!important;}
+body{min-width: 320px;max-width: 640px;margin: 0 auto; background: #fff;font-size: 14px;font-family: -apple-system, Helvetica, sans-serif;line-height: 1.5;-webkit-text-size-adjust: 100%!important;}
 .clearfix:after,.clearfix:before{content: '';display: table;}
 .clearfix:after{clear: both;zoom: 1;}
 .fl{float: left;}

@@ -9,15 +9,16 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
         <meta http-equiv="x-dns-prefetch-control" content="on">
-        <link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="../../../css/base.css"/>
-        <link rel="stylesheet" type="text/css" href="../../../css/car.css"/>
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css"/>
-        <script src="../../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" src="../../../js/car.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../static/bootstrap/bootstrap.min.css"/>
+		<script type="text/javascript" charset="utf-8" src="../../../static/bootstrap/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../../../static/bootstrap/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../../css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../static/other/base.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../static/other/car.css"/>
+        <script type="text/javascript" src="./car.js"></script>
     </head>
     <body>
+        <div class="empty-list" style="display: none;"><h2>购物车快饿瘪了T.T</h2><div class="desc">快给我挑点宝贝</div><div class="go-homepage-btn"><a>去逛逛</a></div></div>
         <div class="cart-container">
             <div class="login-tip">
                 <span class="close"> </span>
@@ -50,6 +51,13 @@
                                         class="goods-img">
                                     </div>
                                     <div class="desc-wrap">
+                                        <div class="input-num" style="display: none;">
+                                            <div class="van-stepper">
+                                                <button class="van-stepper__minus van-stepper__plus--disabled"> </button>
+                                                <input type="number" value="1" class="van-stepper__input">
+                                                <button class="van-stepper__plus"></button>
+                                            </div>
+                                        </div>
                                         <div class="goods-name"> 0-6岁宝宝多营养蛋20枚富含DHA非转基因饲料喂养顺丰包邮 </div>
                                         <div class="sku-str"> 20个／盒 </div>
                                         <div class="goods-price"> ¥79.90 </div>
@@ -60,10 +68,39 @@
                                 <div class="delete-btn">
                                     <span> 删除 </span>
                                 </div>
-                                <div class="van-swipe-cell__right">
-                                    <div class="swipe-delete">
-                                        <span> 删除 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods">
+                        <div class="van-swipe-cell">
+                            <div class="van-swipe-cell__wrapper" style="transform: translate3d(0px, 0px, 0px); transition: all 0.6s cubic-bezier(0.18, 0.89, 0.32, 1) 0s;">
+                                <div class="van-checkbox">
+                                    <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked">
+                                        <i class="van-icon van-icon-success"> </i>
                                     </div>
+                                </div>
+                                <div class="goods-card">
+                                    <div class="goods-img-wrap">
+                                        <img alt="商品图片" src="https://img.yzcdn.cn/upload_files/2018/12/17/Fv-IxyT1tVPc9YPsqkkJQ2FblMB1.jpg?imageView2%2F2%2Fw%2F200%2Fh%2F200%2Fq%2F75%2Fformat%2Fwebp"
+                                        class="goods-img">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <div class="input-num" style="display: none;">
+                                            <div class="van-stepper">
+                                                <button class="van-stepper__minus van-stepper__plus--disabled"> </button>
+                                                <input type="number" value="1" class="van-stepper__input">
+                                                <button class="van-stepper__plus"></button>
+                                            </div>
+                                        </div>
+                                        <div class="goods-name"> 0-6岁宝宝多营养蛋20枚富含DHA非转基因饲料喂养顺丰包邮 </div>
+                                        <div class="sku-str"> 20个／盒 </div>
+                                        <div class="goods-price"> ¥79.90 </div>
+                                        <span class="num"> x5 </span>
+                                        <div class="err-msg"> </div>
+                                    </div>
+                                </div>
+                                <div class="delete-btn">
+                                    <span> 删除 </span>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +133,13 @@
                                         class="goods-img">
                                     </div>
                                     <div class="desc-wrap">
+                                        <div class="input-num"  style="display: none;">
+                                            <div class="van-stepper">
+                                                <button class="van-stepper__minus van-stepper__plus--disabled"> </button>
+                                                <input type="number" value="1" class="van-stepper__input">
+                                                <button class="van-stepper__plus"></button>
+                                            </div>
+                                        </div>
                                         <div class="goods-name"> 0-6岁宝宝多营养蛋20枚富含DHA非转基因饲料喂养顺丰包邮 </div>
                                         <div class="sku-str"> 20个／盒 </div>
                                         <div class="goods-price"> ¥79.90 </div>
@@ -105,11 +149,6 @@
                                 </div>
                                 <div class="delete-btn">
                                     <span> 删除 </span>
-                                </div>
-                                <div class="van-swipe-cell__right">
-                                    <div class="swipe-delete">
-                                        <span> 删除 </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -131,8 +170,8 @@
                         <span class="price-num"> 399.50 </span>
                         <p class="desc"> 不含运费 </p>
                     </div>
-                    <button class="bottom-button van-button van-button--danger van-button--normal van-button--square">
-                    <span class="van-button__text"> 结算(1) </span>
+                    <button class="bottom-button van-button van-button--danger van-button--normal van-button--square ">
+                        <span class="van-button__text"> 结算(0) </span>
                     </button>
                 </div>
             </div>

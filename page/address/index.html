@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>快乐的蛋 </title>
+		<meta http-equiv="Cache-Control" content="max-age=180">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<link rel="stylesheet" type="text/css" href="../../static/bootstrap/bootstrap.min.css"/>
+		<script src="../../static/bootstrap/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../static/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/other/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/other/car.css"/>
+		<link rel="stylesheet" type="text/css" href="./jquery-weui.min.css">
+		<script type="text/javascript" src="./jquery-weui.min.js"></script>
+		<script type="text/javascript" src="./city-picker.min.js"></script>
+		<script type="text/javascript" src="./address.js"></script>
+	</head>
+	<body>
+		<div class="van-address-edit container">
+			<div class="van-cell van-field">
+				<div class="van-cell__title">
+					<span> 姓名 </span>
+				</div>
+				<div class="van-cell__value">
+					<div class="van-field__body">
+						<input type="text" placeholder="收货人姓名" class="van-field__control">
+					</div>
+				</div>
+			</div>
+			<div class="van-cell van-field">
+				<div class="van-cell__title">
+					<span> 电话 </span>
+				</div>
+				<div class="van-cell__value">
+					<div class="van-field__body">
+						<input type="tel" placeholder="收货人手机号" class="van-field__control">
+					</div>
+				</div>
+			</div>
+			<div class="van-cell van-field">
+				<div class="van-cell__title">
+					<span> 地区 </span>
+				</div>
+				<div class="van-cell__value">
+					<div class="van-field__body">
+						<input type="text"  id="city-picker" readonly="readonly" placeholder="选择省 / 市 / 区" class="van-field__control">
+					</div>
+				</div>
+			</div>
+			<div class="van-cell van-field">
+				<div class="van-cell__title">
+					<span> 详细地址 </span>
+				</div>
+				<div class="van-cell__value">
+					<div class="van-field__body">
+						<textarea rows="2" maxlength="200" placeholder="街道门牌、楼层房间号等信息" class="van-field__control"
+						style="height: 48px;">
+						</textarea>
+					</div>
+				</div>
+			</div>
+			<div class="address-edit__analyze" style="display: none;">
+				<span> 智能识别地址 </span>
+			</div>
+			<div style="display: none;">
+				<div class="analyze-input van-cell van-cell--borderless van-field van-field--min-height">
+					<div class="van-cell__title">
+						<span> 地址 </span>
+					</div>
+					<div class="van-cell__value">
+						<div class="van-field__body">
+							<textarea placeholder="输入或粘贴地址信息，如浙江省杭州市西湖区文一路29号" class="van-field__control">
+							</textarea>
+						</div>
+					</div>
+				</div>
+				<div class="analyze-input__bar">
+					<button class="van-button van-button--default van-button--small">
+					<span class="van-button__text"> 识别地址 </span>
+					</button>
+					<div class="analyze-input__manual"> 取消 </div>
+				</div>
+			</div>
+			<div class="van-address-edit__buttons">
+				<button class="van-button van-button--danger van-button--normal van-button--block">
+				<span class="van-button__text"> 保存并使用 </span>
+				</button>
+				<div class="clear10"></div>
+				<button class="van-button van-button--default van-button--normal van-button--block"  data-toggle="modal" data-target="#myModal">
+				<span class="van-button__text"> 删除收货地址 </span>
+				</button>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1"  id="myModal" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="van-dialog__header van-dialog__header--isolated"> 确定要删除么 </div>
+					<div class="van-hairline--top van-dialog__footer van-dialog__footer--buttons">
+						<button class="van-button van-button--default van-button--large van-dialog__cancel" data-dismiss="modal" aria-label="Close">
+							<span class="van-button__text"> 取消 </span>
+						</button>
+						<button class="van-button van-button--default van-button--large van-dialog__confirm van-hairline--left" data-dismiss="modal" aria-label="Close">
+							<span class="van-button__text" data-dismiss="modal"> 确认 </span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<style type="text/css">
+</style>
