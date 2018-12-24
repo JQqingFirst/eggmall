@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="../../static/other/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../../static/other/member-center.css"/>
 		<link rel="stylesheet" type="text/css" href="../../static/other/feature-manager.css"/>
-
+		<script type="text/javascript" src="./index.js"></script>
 	</head>
 	<body ontouchstart="" class="body-fixed-bottom">
 		<div class="container is-mobile">
@@ -76,11 +76,7 @@
 									我的订单
 								</span>
 							</div>
-							<div class="van-cell__value">
-								<span>
-									查看全部订单
-								</span>
-							</div>
+							<div class="van-cell__value"><span> <a href="../order/list.html"> 查看全部订单</a> </span></div>
 							<i class="van-icon van-icon-arrow van-cell__right-icon">
 							</i>
 						</div>
@@ -158,11 +154,10 @@
 							</div>
 							<div class="classic-group__item">
 								<div class="van-cell van-cell--clickable">
-									<i class="van-icon van-icon-cart-1 van-cell__left-icon">
-									</i>
+									<i class="van-icon van-icon-cart-1 van-cell__left-icon"> </i>
 									<div class="van-cell__title">
 										<span>
-											购物车
+											<a href="../buy\wsctrade_buy.html"> 购物车 </a>
 										</span>
 									</div>
 									<div class="van-cell__value">
@@ -170,8 +165,7 @@
 											1
 										</span>
 									</div>
-									<i class="van-icon van-icon-arrow van-cell__right-icon">
-									</i>
+									<i class="van-icon van-icon-arrow van-cell__right-icon"> </i>
 								</div>
 							</div>
 							<div class="classic-group__item">
@@ -257,13 +251,11 @@
 								</div>
 							</div>
 							<div class="classic-group__item">
-								<div class="van-cell van-cell--clickable">
+								<div class="van-cell van-cell--clickable setting-info-cell">
 									<i class="van-icon van-icon-account van-cell__left-icon">
 									</i>
 									<div class="van-cell__title">
-										<span>
-											帐号设置
-										</span>
+										<span> 帐号设置 </span>
 									</div>
 									<i class="van-icon van-icon-arrow van-cell__right-icon">
 									</i>
@@ -353,7 +345,7 @@
 					<a href="https://h5.youzan.com/v2/home?kdt_id=19092520" class="">
 						店铺主页
 					</a>
-					<a href="https://h5.youzan.com/v2/usercenter?kdt_id=19092520" class="">
+					<a href="" class="">
 						会员中心
 					</a>
 					<a href="javascript:;" class="js-open-follow">
@@ -371,22 +363,20 @@
 			</div>
 		</div>
 		<style>
-		a { text-decoration: none; } .copyright { background-color: #f8f8f8; color:
-		#999; font-size: 0; line-height: 16px; text-align: center; } .copyright
-		.ft-links { padding: 30px 15px 10px; } .copyright .ft-links a { padding:
-		0 6px; color: #666; font-size: 12px; } .copyright .ft-links a:not(:last-child)
-		{ border-right: 1px solid #e5e5e5; } .ft-copyright { padding: 50px 0 20px;
-		margin: 0 15px; font-size: 12px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAABaCAMAAADpVu8YAAAAilBMVEUAAADAwMS/v8PBwcTHx8jx8f/AwMTAwMbAwMfAwMTOzs/AwMTAwMTBwcTCwsbAwMTAwMTBwcXAwMS/v8TAwMTBwcTAwMTAwMTBwcbExMnBwcXAwMTAwMTAwMPCwsfAwMTAwMTAwMTAwMTAwMTAwMTAwMXAwMTOztDAwMTBwcTCwsXAwMTBwcW/v8NHotAJAAAALXRSTlMA+8lLFwKjLx/hC9aCk0fysX2H56mWxkQ6ElaLZd0m7JzPv3ZvXrYG9480rj/OuHTBAAAE7ElEQVR42uzY23KqMBiG4S9KVLAuVGApCm5Q1Gq/+7+9xSYuWwpKx56YyXPCP2OO3kmMAsMwDMMwDMMwDMMwDMMwDMMwDL3s45MdDGA8LWJubVo+b8vCAcaTpGDpDOM5AyoR2ptEf1ay5dIgeEdVNwiCFXTTpbL/WX4R4oGw6G2T/FR9lc4GwDvJLnSzo5KitZRkB4/sSVrVlD0y1jVlj0oXrfkkp3hAxmSCSkrrRE51TTmkMkdbR7fN8pSkfbkIkodLxkdmRHI7HtvFI7eENhxBZYW2FnkkifvCNSsAnAUrttDGjFcW2jq0ON/ywCogHFLjlBNeSTSYdyoESbtTb6dK9kgxnWRcksWwg9Mh15NcNtAvphTaSKi4985zextkyv23BPDl2ul75AKAntfO0aUS/2pKHKfJsZoSYW8EbVPOeNX53ZTKLaWib8oRrw5oIq3PIpLibDVxUOjPrtZ5tXK0ulfFxaXmGfRgV1I+JLdq692XsMaOtY7QQZ//ra2i1GC+mAR+0EeDYlMOTMpv3nnjBZskFiyJOWo5XqtNCd/LrEkKzxMkXS+T2pk1M175sHOxhAYcl03GqLUsMg/qSFQNyuz+l7+Z3bwkMM/7Qh8RG3VQZy7YqI+KIldQTRmR3GqXUg7ZKEENJ+ZPUr6R3F1TWqkfIhOQ7N1SWistznfKZiPU2PAnKaVN8qNM6f8VxYzwRHJxSzmle8HLCz0229/5rR6Pq7y6lHv1AsmnEgHyQnIoVcrywyFenTzwjgW+6Rc3Msk3VPVqUi4EyRTYCeZEZ7rCMV94OqNMyZ3zcSITvLijz3siVA1sZpKWKZ2lIOmrb4U4WISA7A5JujOolMoGr+1f+3bYpRoQx3H8R1GopqTuEkpU1vF//2/vYu8mkp3u8WDnmM8j1Tk9+B5mpokwoF5PA5hrVSUPfCk3x+pLbuWh489RmZRvXr9ehHTnQ1TTyWa9wYr6WWgy91TYTm2+lJlKxBK03LzP7B7b2FaMTzGncC25bqmwfDeleaWCkldrdJvjAtd820U46TeDuE5U4Eq5xiN3X5X0gEN10Na9rsSC+ukQV8qdMsaD0LovkGzqMsKUxJ0yRO3CqKAkkCn/I6WBWkal1LvvZzCrLe1JqXQbTUr16WfLByqci6E6ZYRup7GkjNBsqbv4Yr+bUkW33VhSHtEwAwZIGTuOE48uJWloGCKly4joc3QpmYbX2+gHs83hSWlT4WN0Ka94waZOHClzhYii8Y2Vq8FT5owK+ehSGhg6pZdSs91F13Vx94T4U1pAz1i53bex7pRxmqZXFKY6lSITEHMfaNizkn8Gb3M3jErWFFgy9ZTkJoTHmzIYMGW4ZFQ5u0BMFcU6XQR/fI03pT5UyjCO6Itia8CMUS1YTgS+x4UzZTDHKwf+lHNvF9C3KENJC72DqtA35ghb8+eUiuXEqxveS2ka7ZSrxdqgWnDRUHMnu/rDoy3mld6bku13fmaixJ3SVUtHaqfU6cHZ09CW2UE9x4noVUpjvfBCDTXelDDo2xwPpoz+sRYhun3sGJU8iOg5pRLpSe6ihT/l6cVNRgkV2DWZoYfpR8L+Dd5IeTwfLrMb3uOrqnpBbaVW9ksXDZqz82cafpTrgq4xA6ooC8wnYo72v8af4Hhe+pmgJ4IkSZIkSZIkSZIkSZIkSZIkSUP6C1RC724Kv/DFAAAAAElFTkSuQmCC')
-		no-repeat center 17px; background-size: 110px 30px; } .ft-copyright a {
-		padding-top: 45px; color: #bfbfc3; } .ft-copyright .yz-logo { padding-left:
-		14px; position: relative; } .ft-copyright .yz-logo::before { content: '';
-		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAkCAMAAACpD3pbAAAAb1BMVEUAAADLy8vKysrLy8vLy8vLy8vLy8vLy8vMzMzOzs7Ly8vLy8vMzMzQ0NDLy8vLy8vLy8vLy8vLy8vMzMzOzs7Pz8/S0tLLy8vKysrLy8vKysrLy8vLy8vLy8vMzMzNzc3Nzc3R0dHLy8vMzMzKysrwyZpuAAAAJHRSTlMAoqm+ZfvtjEA4z65xCebgxJmGUjMdGPPm2tW0p5OQSSkQdl8nEAN1AAAAwUlEQVQ4y6XQyRaDIAyF4bQgivNsnbXN+z9jj7CoUsLGf/udLHLhWj2kTAJZj4jeRmmDRxPFgeKQYq54oHhWzCjOFUeEJp3iguAaVSXBseaYYKb5Y9fdO18nm2yNr3XCX6JQHPPyM4do9jIWpTkxjo39fIMuAyWlRfW8TbXCA21lIJlAfMDTygIyRJpzQBe/3SzdXLu5usNe6+QRnOzf4sDFKQc7i7yI1wbgj1M286CFX57mKRt9LncwW7o+KgMg+gJYeFH82wegJQAAAABJRU5ErkJggg==)
-		no-repeat; background-size: 10px 12px; width: 10px; height: 12px; position:
-		absolute; bottom: 1px; left: 0; } .footer { padding: 0; min-height: 1px;
-		text-align: center; line-height: 16px; background-color: #f8f8f8; margin:
-		0 auto; }
+		a{text-decoration: none;}
+			.copyright{background-color: #f8f8f8;color:#999;font-size: 0;line-height: 16px;text-align: center;}
+			.copyright.ft-links{padding: 30px 15px 10px;}
+			.copyright .ft-links a{padding:0 6px;color: #666;font-size: 12px;}
+			.copyright .ft-links a:not(:last-child){border-right: 1px solid #e5e5e5;}
+			.ft-copyright{padding: 50px 0 20px;margin: 0 15px;font-size: 12px;background: url('data:image/png;base64,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')no-repeat center 17px;background-size: 110px 30px;}
+			.ft-copyright a{padding-top: 45px;color: #bfbfc3;}
+			.ft-copyright .yz-logo{padding-left:14px;position: relative;}
+			.ft-copyright .yz-logo::before{content: '';background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAkCAMAAACpD3pbAAAAb1BMVEUAAADLy8vKysrLy8vLy8vLy8vLy8vLy8vMzMzOzs7Ly8vLy8vMzMzQ0NDLy8vLy8vLy8vLy8vLy8vMzMzOzs7Pz8/S0tLLy8vKysrLy8vKysrLy8vLy8vLy8vMzMzNzc3Nzc3R0dHLy8vMzMzKysrwyZpuAAAAJHRSTlMAoqm+ZfvtjEA4z65xCebgxJmGUjMdGPPm2tW0p5OQSSkQdl8nEAN1AAAAwUlEQVQ4y6XQyRaDIAyF4bQgivNsnbXN+z9jj7CoUsLGf/udLHLhWj2kTAJZj4jeRmmDRxPFgeKQYq54oHhWzCjOFUeEJp3iguAaVSXBseaYYKb5Y9fdO18nm2yNr3XCX6JQHPPyM4do9jIWpTkxjo39fIMuAyWlRfW8TbXCA21lIJlAfMDTygIyRJpzQBe/3SzdXLu5usNe6+QRnOzf4sDFKQc7i7yI1wbgj1M286CFX57mKRt9LncwW7o+KgMg+gJYeFH82wegJQAAAABJRU5ErkJggg==)no-repeat;background-size: 10px 12px;width: 10px;height: 12px;position:absolute;bottom: 1px;left: 0;}
+			.footer{padding: 0;min-height: 1px;text-align: center;line-height: 16px;background-color: #f8f8f8;margin:0 auto;}
 		</style>
 	</body>
 </html>
 <style type="text/css">
+span>a{color:inherit;}
+.van-cell>a{color:inherit;}
 </style>

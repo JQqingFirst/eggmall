@@ -17,4 +17,9 @@ $(function() {
       .find('input.van-radio__control')
       .attr("checked", false)
   })
+
+  $(document).on('click', 'button.van-address-list__add', function() {
+    location.href = './index.html'
+  })
+
 })
