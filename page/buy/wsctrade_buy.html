@@ -13,11 +13,262 @@
 		<script src="../../static/bootstrap/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../static/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/other/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/other/buy-base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/other/buy.css"/>
+		<script type="text/javascript" src="./wsctrade_buy.js"></script>
 	</head>
 	<body>
-		<div class=""></div>
+		<div class="index-view">
+			<div class="stripe-border--bottom index__block address__block" type="address-block">
+				<div>
+					<div class="address-card van-cell van-cell--center van-cell--clickable">
+						<div class="van-cell__value van-cell__value--alone">
+							<i class="van-icon van-icon-location address__location">
+							</i>
+							<div class="address__content">
+								<div class="address__info">
+									<p class="address__name van-ellipsis"> 收货人：dhy </p>
+									<p class="address__tel van-ellipsis"> 13070109282 </p>
+								</div>
+								<p class="address__detail"> 收货地址：北京市昌平区昌赤路 北京十三陵风景区 </p>
+							</div>
+						</div>
+						<i class="van-icon van-icon-arrow van-cell__right-icon">
+						</i>
+					</div>
+				</div>
+			</div>
+			<div type="goods-block">
+				<div class="goods-list">
+					<div class="goods-list-header van-cell van-cell--borderless">
+						<i class="van-icon van-icon-shop van-cell__left-icon"> </i>
+						<div class="van-cell__value van-cell__value--alone">
+							<a href="https://h5.youzan.com/v2/showcase/homepage?kdt_id=19092520"> 快乐的蛋 </a>
+						</div>
+					</div>
+					<div class="goods-list-card">
+						<div class="van-card">
+							<a href="javascript:;" class="van-card__thumb">
+								<img src="https://img.yzcdn.cn/upload_files/2018/12/18/FjZqeiaXPsP1Jb2axZ0p_9b2eAE_.jpg?imageView2%2F2%2Fw%2F180%2Fh%2F180%2Fq%2F75%2Fformat%2Fjpg"
+								class="van-card__img">
+							</a>
+							<div class="van-card__content">
+								<div class="van-card__left">
+									<div class="van-card__title"> 可生食吃五星鸡蛋 高品质家庭首选 鲜鸡蛋20枚 顺丰包邮 </div>
+									<div class="van-card__desc van-ellipsis"> 20枚／盒 </div>
+								</div>
+								<div class="van-card__right">
+									<div class="van-card__now-price"> ¥36.00 </div>
+									<div class="van-card__origin-price"> </div>
+									<div class="van-card__num"> x 1 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods-list-price van-cell">
+						<div class="van-cell__value van-cell__value--alone">
+							<span class="goods-list-price__count"> 共1件商品 </span> 小计： <span class="goods-list-price__amount theme-color"> ¥36.00 </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index__block" type="ump-block">
+				<div class="coupon-cell van-cell-group van-hairline--top-bottom van-coupon-cell">
+					<div class="van-cell van-cell--clickable">
+						<div class="van-cell__title"> <span> 优惠券 </span> </div>
+						<div class="van-cell__value"> <span> 使用优惠 </span> </div>
+						<i class="van-icon van-icon-arrow van-cell__right-icon">
+						</i>
+					</div>
+				</div>
+			</div>
+			<div type="service-block">
+				<div class="index__block">
+				</div>
+				<div class="index__block">
+					<div class="van-cell van-cell--center van-cell--clickable buy-distribution" data-toggle="modal" data-target=".myModal">
+						<div class="van-cell__title"> <span> 配送方式 </span> </div>
+						<div class="van-cell__value">
+							<p class="express-way__fee"> 免运费 </p>
+							<p class="express-way__type"> 普通快递 </p>
+						</div>
+						<i class="van-icon van-icon-arrow van-cell__right-icon"> </i>
+					</div>
+					<div class="van-cell van-field">
+						<div class="van-cell__title">
+							<span> 买家留言 </span>
+						</div>
+						<div class="van-cell__value">
+							<div class="van-field__body">
+								<textarea rows="1" placeholder="建议留言前先与商家沟通确认" class="van-field__control"style="height: 24px;">
+								</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div type="price-block">
+				<div class="price-panel">
+					<p> 商品金额 <span class="price-origin-all"> ¥ 36.00 </span> </p>
+					<p> 运费 <span class="freight"> + ¥ 4.00 </span> </p>
+					<div class="price-panel__total van-hairline--top"> 合计： <span class="price-panel__amount theme-color"> ¥36.00 </span> </div>
+				</div>
+			</div>
+			<div class="copyright" type="copyright-block">
+				<img src="//img.yzcdn.cn/wsctrade/secured_20181203.png" class="copyright__ensure">
+				<div class="copyright__logo" style="background-image: url(&quot;https://img.yzcdn.cn/public_files/2018/02/01/01a9df5ffcbf29f1416832070b5a909b.png?imageView2%2F2%2Fw%2F330%2Fh%2F90%2Fq%2F75%2Fformat%2Fpng&quot;);">
+					<a href="https://www.youzan.com?from_source=support_logo" class="copyright__tip"> 有赞提供技术支持 </a>
+				</div>
+			</div>
+			<div type="submit-block">
+				<div class="submit-bar van-submit-bar">
+					<div class="van-submit-bar__bar">
+						<div class="van-submit-bar__text">
+							<span>
+								合计：
+							</span>
+							<span class="van-submit-bar__price">
+								¥ 95.00
+							</span>
+						</div>
+						<button class="van-button van-button--danger van-button--large van-button--square">
+						<span class="van-button__text">
+							去支付
+						</span>
+						</button>
+					</div>
+				</div>
+				<div class="cap-pay" password="" accept-price="0" style="display: none;">
+					<div class="van-popup van-popup--bottom" style="z-index: 2010;">
+						<div class="cap-pay-list">
+							<div class="cap-pay-item__cell van-cell van-cell--clickable" style="color: rgb(51, 136, 255);">
+								<div class="van-cell__title">
+									<span class="cap-pay-item--middle">
+										支付宝支付
+									</span>
+									<span class="cap-pay-item--middle cap-pay--gray-darker">
+									</span>
+								</div>
+							</div>
+							<div class="cap-pay-item__cell van-cell van-cell--clickable">
+								<div class="van-cell__title">
+									<span class="cap-pay-item--middle">
+										银行卡支付
+									</span>
+									<span class="cap-pay-item--middle cap-pay--gray-darker">
+									</span>
+								</div>
+							</div>
+							<div class="cap-pay-item__cell van-cell van-cell--clickable">
+								<div class="van-cell__title">
+									<span class="cap-pay-item--middle">
+										找人代付
+									</span>
+									<span class="cap-pay-item--middle cap-pay--gray-darker">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="van-modal" style="z-index: 2009;">
+					</div>
+				</div>
+			</div>
+			<div class="express-way__action-sheet van-actionsheet van-actionsheet--withtitle myModal"
+				style="z-index: 2001; display: none;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="van-hairline--top-bottom van-actionsheet__header">
+					<div> 配送方式 </div>
+					<i class="van-icon van-icon-close"> </i>
+				</div>
+				<div class="van-actionsheet__content">
+					<div class="van-cell-group van-hairline--top-bottom">
+						<div class="express-way-option van-cell van-cell--clickable">
+							<div class="van-cell__value van-cell__value--alone">
+								<div class="van-radio">
+									<span class="van-radio__input">
+										<input type="radio" class="van-radio__control" value="0">
+										<i class="van-icon van-icon-checked"> </i>
+									</span>
+								</div>
+								<div class="express-way-option__content">
+									<h3 class="express-way-option__title">
+									<span> 普通快递 </span>
+									<span> 免运费 </span>
+									</h3>
+									<p> 由商家选择合作快递为您服务 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="express-way__close van-button van-button--danger van-button--large van-button--square">
+					<span class="van-button__text" data-dismiss="modal" aria-label="Close"> 确定 </span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="coupon-view van-coupon-list" style="display: none;">
+			<div class="van-cell van-cell--borderless van-field van-coupon-list__field">
+				<div class="van-cell__value van-cell__value--alone">
+					<div class="van-field__body">
+						<input type="text" placeholder="请输入优惠码" maxlength="20" class="van-field__control">
+						<div class="van-field__button">
+							<button disabled="disabled" class="van-button van-button--danger van-button--small van-button--disabled van-button--unclickable van-coupon-list__exchange">
+							<span class="van-button__text">
+								兑换
+							</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="van-tabs van-tabs--line van-coupon-list__tab">
+				<div class="van-tabs__wrap van-hairline--top-bottom">
+					<div class="van-tabs__nav van-tabs__nav--line">
+						<div class="van-tab van-tab--active">
+							<span class="van-ellipsis">
+								可以使用优惠券 (0)
+							</span>
+						</div>
+						<div class="van-tab">
+							<span class="van-ellipsis">
+								不可使用优惠券 (0)
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="van-tabs__content">
+					<div class="van-tab__pane" style="">
+						<div class="van-coupon-list__list" style="height: 593px;">
+							<div class="van-coupon-list__empty">
+								<img src="https://img.yzcdn.cn/v2/image/wap/trade/new_order/empty@2x.png">
+								<p>
+									暂无优惠券
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="van-tab__pane" style="display: none;">
+						<div class="van-coupon-list__list" style="height: 593px;">
+							<div class="van-coupon-list__empty">
+								<img src="https://img.yzcdn.cn/v2/image/wap/trade/new_order/empty@2x.png">
+								<p>
+									暂无优惠券
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="van-button van-button--default van-button--large van-coupon-list__close">
+			<span class="van-button__text">
+				不使用优惠
+			</span>
+			</button>
+		</div>
 	</body>
 </html>
 <style type="text/css">
-	
+	.van-tab--active{box-sizing: border-box;}
+	.van-tab--active .van-ellipsis{border-bottom: solid 2px #f44;height: 100%;}
 </style>
